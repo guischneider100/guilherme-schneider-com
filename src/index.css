@@ -12,14 +12,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: #00FF41;
-  --secondary-color: #39FF14;
-  --tertiary-color: #00FFFF;
-  --quaternary-color: #FFA500;
-  --quinary-color: #888888;
-  --sext-color: #00FF41;
+  --neon-green: #00FF41;
+  --aqua-blue: #00FFFF;
+  --web-orange: #FFA500;
+  --argent-gray: #888888;
 }
 
+/* Background old computer effect */
 body::before {
   content: "";
   position: fixed;
@@ -43,8 +42,6 @@ body::before {
   animation: flicker 1.5s infinite, crt-warp 10s infinite linear;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -61,23 +58,23 @@ body {
 h1 {
   font-size: clamp(1rem, 17vw, 5rem);
   line-height: 0.8;
-  color: var(--primary-color);
+  color: var(--neon-green);
 }
 
 h2 {
   font-size: clamp(0.5rem, 10vw, 3rem);
   line-height: 0.4;
-  color: var(--quinary-color);
+  color: var(--argent-gray);
 }
 
 h3 {
   font-size: clamp(0.5rem, 10vw, 2.5rem);
   line-height: 0.4;
-  color: var(--primary-color);
+  color: var(--neon-green);
 }
 
 h4 {
   font-size: clamp(0.5rem, 10vw, 2rem);
   line-height: 0.4;
-  color: var(--quaternary-color);
+  color: var(--web-orange);
 }

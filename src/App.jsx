@@ -3,6 +3,13 @@ import './App.css'
 import Card from './Card';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
+/* Images */
+import pixelArt from './assets/pixel-art.png'
+import gitPixel from './assets/git-pixel.png'
+import emailPixel from './assets/email-pixel.png'
+import linkedinPixel from './assets/linkedin-pixel.png'
+import cvPixel from './assets/cv-pixel.png'
+
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +18,7 @@ function App() {
     <>
       <nav className="navbar">
         <a href="#">
-          <img src="src/assets/pixel-art.png" alt="Logo" className="navbar-icon" />
+          <img src={pixelArt} className="navbar-icon" />
         </a>
 
         <GiHamburgerMenu
@@ -28,7 +35,7 @@ function App() {
       </nav>
 
       <div>
-        <img src="src/assets/pixel-art.png" alt="Profile" className="profile-photo" />
+        <img src={pixelArt} alt="Profile" className="profile-photo" />
       </div>
 
       <h1>
@@ -60,10 +67,18 @@ function App() {
       </section>
 
       <div className="floating-contact">   
-        <a href="https://github.com/guischneider100" target="_blank" rel="noopener noreferrer"><img src="src/assets/git-pixel.png" alt="Logo" className="navbar-icon" /></a>
-        <a href="mailto:guilhermeschneider23@gmail.com" target="_blank" rel="noopener noreferrer"><img src="src/assets/email-pixel.png" alt="Logo" className="navbar-icon" /></a>
-        <a href="https://www.linkedin.com/in/guilherme-felipe-schneider" target="_blank" rel="noopener noreferrer"><img src="src/assets/linkedin-pixel.png" alt="Logo" className="navbar-icon" /></a>
-        <a href="src/assets/resume.pdf" download><img src="src/assets/cv-pixel.png" alt="Logo" className="navbar-icon" /></a>
+        <a href="https://github.com/guischneider100" target="_blank" rel="noopener noreferrer">
+          <img src={gitPixel} className="navbar-icon" />
+        </a>
+        <a href="mailto:guilhermeschneider23@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src={emailPixel} className="navbar-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/guilherme-felipe-schneider" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinPixel} className="navbar-icon" />
+        </a>
+        <a href="src/assets/resume.pdf" download>
+          <img src={cvPixel} className="navbar-icon" />
+        </a>
       </div> 
     </>
   )
