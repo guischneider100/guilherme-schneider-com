@@ -57,7 +57,7 @@ function App() {
       <section id="work-experience" className="section">
         <h3>Work Experience<span className="cursor">_</span></h3>
 
-        <Card title="Online Sistemas" description="Development and management of desktop, web, and mobile applications for ERP and POS systems. Java, PHP, Ionic, HTML, CSS, Javascript and SQL.">   
+        <Card title="Online Sistemas" description="Development and management of desktop, web, and mobile applications for ERP and POS systems. Java, PHP, Android, Ionic, Javascript, HTML, CSS and SQL.">   
         </Card>
       </section>
 
