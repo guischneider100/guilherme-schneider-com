@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css'
 import Card from './Card';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
