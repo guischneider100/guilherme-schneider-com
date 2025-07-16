@@ -9,6 +9,8 @@ import gitPixel from './assets/git-pixel.png'
 import emailPixel from './assets/email-pixel.png'
 import linkedinPixel from './assets/linkedin-pixel.png'
 import cvPixel from './assets/cv-pixel.png'
+import trashToTreasure from './assets/trash-to-treasure.png'
+import resumePDF from './assets/resume.pdf'
 
 function App() {
 
@@ -62,7 +64,7 @@ function App() {
       <section id="projects" className="section">
         <h3>Projects<span className="cursor">_</span></h3>
 
-        <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction." image="src/assets/trash-to-treasure.png">   
+        <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction." image={trashToTreasure}>   
         </Card>
       </section>
 
@@ -76,7 +78,7 @@ function App() {
         <a href="https://www.linkedin.com/in/guilherme-felipe-schneider" target="_blank" rel="noopener noreferrer">
           <img src={linkedinPixel} className="navbar-icon" />
         </a>
-        <a href="src/assets/resume.pdf" download>
+        <a href={resumePDF} download>
           <img src={cvPixel} className="navbar-icon" />
         </a>
       </div> 
