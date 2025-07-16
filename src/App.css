@@ -1,6 +1,85 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 #root {
   margin: 0 auto;
   text-align: center;
+
+  line-height: 1.2;
+
+  filter: contrast(1.05) brightness(1.1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --neon-green: #00FF41;
+  --aqua-blue: #00FFFF;
+  --web-orange: #FFA500;
+  --argent-gray: #888888;
+}
+
+/* Background old computer effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 255, 0, 0.07) 0px,
+      rgba(0, 255, 0, 0.07) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+
+  z-index: 9999;
+  pointer-events: none;
+
+  animation: flicker 1.5s infinite, crt-warp 10s infinite linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  z-index: 0;
+  background-color: #0A0A0A;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  font-size: clamp(1rem, 17vw, 5rem);
+  line-height: 0.8;
+  color: var(--neon-green);
+}
+
+h2 {
+  font-size: clamp(0.5rem, 10vw, 3rem);
+  line-height: 0.4;
+  color: var(--argent-gray);
+}
+
+h3 {
+  font-size: clamp(0.5rem, 10vw, 2.5rem);
+  line-height: 0.4;
+  color: var(--neon-green);
+}
+
+h4 {
+  font-size: clamp(0.5rem, 10vw, 2rem);
+  line-height: 0.4;
+  color: var(--web-orange);
 }
 
 .profile-photo {
