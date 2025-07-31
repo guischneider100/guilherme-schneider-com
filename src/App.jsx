@@ -49,7 +49,7 @@ function App() {
       <section id="about" className="section">
         <h3>About Me<span className="cursor">_</span></h3>
         <p>
-          I'm a Computer Science graduate from Unochapecó with over 5 years of experience as a Full Stack Developer, specializing in the development and maintenance of desktop, web, and mobile applications—particularly ERP systems that support key business operations. I've worked closely with clients to deliver tailored software solutions that improve efficiency and system reliability across departments. My technical toolkit includes Java, PHP, JavaScript, Ionic, Android, PostgreSQL, and MySQL, and I've often taken on multiple roles within small, agile teams. Now based in Australia, I'm looking to bring my hands-on experience and strong technical foundation to new challenges in backend or full-stack development.
+          I'm a Computer Science graduate from Unochapecó with over 5 years of experience as a Full Stack Developer, specializing in the development and maintenance of desktop, web, and mobile applications, particularly ERP systems that support key business operations. I've worked closely with clients to deliver tailored software solutions that improve efficiency and system reliability across departments. My technical toolkit includes Java (with Spring Boot), PHP, JavaScript, React Native, Ionic, Android, PostgreSQL, and MySQL, and I've often taken on multiple roles within small, agile teams. Now based in Australia, I'm looking to bring my hands-on experience and strong technical foundation to new challenges in backend or full-stack development.
         </p>
       </section>
 
@@ -63,7 +63,7 @@ function App() {
       <section id="projects" className="section">
         <h3>Projects<span className="cursor">_</span></h3>
 
-        <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction." image={trashToTreasure}>   
+        <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction. Built with: React Native, Spring Boot and PostgreSQL." image={trashToTreasure}>   
         </Card>
       </section>
 
