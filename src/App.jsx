@@ -57,15 +57,16 @@ function App() {
       <section id="work-experience" className="section">
         <h3>Work Experience<span className="cursor">_</span></h3>
 
-        <Card title="Online Sistemas" description="Development and management of desktop, web, and mobile applications for ERP and POS systems. Led cross-platform projects, created custom reporting tools, implemented data migration solutions, and optimized app deployment processes to improve scalability, user experience, and operational efficiency. Java, PHP, Android, Ionic, Javascript, HTML, CSS and SQL.">   
+        <Card title="Online Sistemas" description="Development and management of desktop, web, and mobile applications for ERP and POS systems. Led cross-platform projects, created custom reporting tools, implemented data migration solutions, and optimized app deployment processes to improve scalability, user experience, and operational efficiency. Java, PHP, Android, Ionic, Javascript, HTML, CSS and SQL." link={"https://onlinebr.net/"} buttonText={"View Website"}>   
         </Card>
       </section>
 
       <section id="projects" className="section">
         <h3>Projects<span className="cursor">_</span></h3>
 
-        <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction. Built with: React Native, Spring Boot and PostgreSQL." image={trashToTreasure} image2={trashToTreasure2} link={"https://github.com/guischneider100/trash-to-treasure"}>   
-        </Card>
+        <section className="section-al">
+          <Card title="Trash to Treasure" description="A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction. Built with: React Native, Spring Boot and PostgreSQL." image={trashToTreasure} image2={trashToTreasure2} link={"https://github.com/guischneider100/trash-to-treasure"} buttonText={"View Code"}/>
+        </section>
       </section>
 
       <div className="floating-contact">   
