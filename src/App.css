@@ -58,25 +58,25 @@ body {
 
 h1 {
   font-size: clamp(1rem, 17vw, 5rem);
-  line-height: 0.8;
+  line-height: 1;
   color: var(--neon-green);
 }
 
 h2 {
   font-size: clamp(0.5rem, 10vw, 3rem);
-  line-height: 0.4;
+  line-height: 1;
   color: var(--argent-gray);
 }
 
 h3 {
   font-size: clamp(0.5rem, 10vw, 2.5rem);
-  line-height: 0.4;
+  line-height:  1;
   color: var(--neon-green);
 }
 
 h4 {
   font-size: clamp(0.5rem, 10vw, 2rem);
-  line-height: 0.4;
+  line-height: 1;
   color: var(--web-orange);
 }
 
