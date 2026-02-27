@@ -1,13 +1,12 @@
-function Card({ title, description, image, image2, link, buttonText }) {
+export default function Card({ title, description, images = [], link, buttonText }) {
     return (
         <div className="card">
             <h4>{title}<span className="cursor">_</span></h4>
-            {image && <img src={image}></img>}
-            {image2 && <img src={image2}></img>}
+            {images.map((img, index) => (
+                <img key={index} src={img} loading="lazy"></img>
+            ))}
             <p>{description}</p>
             {link && <a href={link} target="_blank">{buttonText}</a>}
         </div>
     );
 }
-
-export default Card;
