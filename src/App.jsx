@@ -10,7 +10,6 @@ function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const professionalProjects = useMemo(() => projects.filter(p => p.type === "pro"), []);
   const personalProjects = useMemo(() => projects.filter(p => p.type === "per"), []);
 
   return (
@@ -27,12 +26,6 @@ function App() {
 
         <Section id={"work-experience"} title={"Work Experience"}>
           <Card title="Online Sistemas" description="Development and management of desktop, web, and mobile applications for ERP and POS systems. Led cross-platform projects, created custom reporting tools, implemented data migration solutions, and optimized app deployment processes to improve scalability, user experience, and operational efficiency. Java, PHP, Android, Ionic, Javascript, HTML, CSS and SQL." link={"https://onlinebr.net/"} buttonText={"View Website"}/>
-        </Section>
-
-        <Section id={"pro-projects"} title={"Professional Projects"}>
-          {professionalProjects.map((project, index) =>
-            <Card key={project.title} {...project}/>
-          )}
         </Section>
 
         <Section id={"per-projects"} title={"Personal Projects"}>
