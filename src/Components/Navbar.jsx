@@ -1,25 +1,35 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import pixelArt from '../assets/pixel-art.png'
+import flagBrazil from '../assets/flag-brazil.png'
+import flagUsa from '../assets/flag-usa.png'
 
-export default function Navbar({menuOpen, setMenuOpen}) {
-    return(
-      <nav className="navbar">
-        <a href="#">
-          <img src={pixelArt} className="navbar-icon" />
-        </a>
+import { useContext } from "react";
+import { LanguageContext, useLanguage } from "./LanguageContext";
 
-        <GiHamburgerMenu
-          className="hamburger"
-          size={28}
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
-        
-        <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#work-experience" onClick={() => setMenuOpen(false)}>Work Experience</a>
-          <a href="#per-projects" onClick={() => setMenuOpen(false)}>Projects</a>
-        </div>
-      </nav>
-    );
+export default function Navbar({ menuOpen, setMenuOpen }) {
+
+  const {text, language, toggleLanguage} = useLanguage()
+
+  return (
+    <nav className="navbar">
+      <a href="#">
+        <img src={pixelArt} className="navbar-icon" />
+      </a>
+
+      <GiHamburgerMenu
+        className="hamburger"
+        size={28}
+        onClick={() => setMenuOpen(!menuOpen)}
+      />
+
+      <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
+        <a href="#about" onClick={() => setMenuOpen(false)}>{text["nav_bar"]["about"]}</a>
+        <a href="#work_experience" onClick={() => setMenuOpen(false)}>{text["nav_bar"]["work_experience"]}</a>
+        <a href="#per_projects" onClick={() => setMenuOpen(false)}>{text["nav_bar"]["per_projects"]}</a>
+
+        <a href="javascript:void(0)" onClick={() => { language == "pt" ? toggleLanguage('en') : toggleLanguage('pt')}}>{language == "pt" ? <img src={flagBrazil}/> : <img src={flagUsa}/>}</a>
+      </div>
+    </nav>
+  );
 }
