@@ -25,7 +25,7 @@ export const translations = {
 
         per_projects: {
             title: "Personal Projects",
-            description: "A community-powered app that lets users share and find free street items, promoting sustainability through reuse and waste reduction. Built with: React Native, Spring Boot and PostgreSQL.",
+            description: "Full-stack marketplace application built to promote circular economy. Features a responsive React frontend consuming a RESTful Spring Boot API, secured with JWT authentication, and backed by a PostgreSQL database for robust data persistence.",
             buttonText: "View code"
         }
     },
@@ -54,7 +54,7 @@ export const translations = {
 
         per_projects: {
             title: "Projetos Pessoais",
-            description: "Um aplicativo movido pela comunidade que permite aos usuários compartilhar e encontrar itens gratuitos na rua, promovendo a sustentabilidade por meio do reúso e da redução de resíduos. Desenvolvido com: React Native, Spring Boot e PostgreSQL.",
+            description: "Aplicação marketplace full-stack desenvolvida para promover a economia circular. Apresenta um frontend responsivo em React que consome uma API RESTful em Spring Boot, protegida por autenticação JWT e estruturada com banco de dados PostgreSQL para uma persistência de dados robusta.",
             buttonText: "Visualizar código"
         }
     }
